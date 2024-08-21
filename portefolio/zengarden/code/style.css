@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #333;
+    background-color: #E8D5B5;
+
+}
+
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0;
+    color: #4A2E19;
+}
+
+h1 {
+    font-size: 3em;
+    border-bottom: 5px solid #BFA06A;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    color: #8C5E3D;
+}
+
+
+section, .sidebar {
+    border: 5px solid #BFA06A;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #F5EBD3;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.preamble {
+    background-color: #E5C4A1;
+    border-left: 10px solid #8C5E3D;
+    padding: 20px;
+}
+
+
+a {
+    color: #8C5E3D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #BFA06A;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    background-color: #4A2E19;
+    color: #FFF;
+    padding: 10px;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #BFA06A;
+}
+
+
+.sidebar {
+    background-color: #4A2E19;
+    color: #FFF;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    color: #FFF;
+    text-align: left;
+}
+
+.sidebar a {
+    color: #BFA06A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #E8D5B5;
+}
+
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
+    display: none; 
+}

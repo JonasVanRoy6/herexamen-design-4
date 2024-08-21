@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+     
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width:600px;
+	height:900px;
+}
+
+
+svg{
+    width: auto;
+    height: 800px;
+}
+#Laag_10 {
+    width: 2000px;
+    left: -1200px;
+    animation: moveBackground 10s linear infinite;
+
+}
+
+@keyframes moveBackground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-78%); }
+}
+
+
+
+
+
+
+#wiel_2_auto_1,#wiel_1_auto_1,#kleur_1,#auto_1,#vlam_auto1{
+    animation: rijden 5s ease-in-out infinite;
+}
+#vlam_auto1{
+    animation: rijden 5s ease-in-out infinite,
+                vlam1 5s ease-in-out infinite;
+}
+@keyframes rijden{
+    0% { transform: translateX(0px); }
+    
+    50% { transform: translateX(300px); }
+    100% { transform: translateX(0);}
+}
+@keyframes vlam1{
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0;}
+}
+#wiel_2_auto_2,#wiel_1_auto2,#kleur_2,#auto_2,#vlam_auto_2{
+    animation: rijden2 5s ease-in-out infinite;
+}
+
+#vlam_auto_2{
+    animation: rijden2 5s ease-in-out infinite,
+                vlam2 5s ease-in-out infinite;
+}
+@keyframes rijden2{
+    0% { transform: translateX(300px); }
+    
+    50% { transform: translateX(0px); }
+    100% { transform: translateX(300px);}
+}
+
+@keyframes vlam2{
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
+
+
+
