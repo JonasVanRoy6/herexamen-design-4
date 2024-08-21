@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1193.6 843.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #892584;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="319.03" y="124.27" width="595.28" height="595.28"/>
+  <image width="3508" height="2480" transform="scale(.34)" xlink:href="../../../zengarden.png"/>
+</svg>

@@ -1,0 +1,88 @@
+svg{
+   
+    width: 50%;
+}
+
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 10%;
+    margin-right: 0;
+}
+
+#antenne {
+   
+    transform-origin: 50% 40%;
+    animation: disappear 2s ease forwards; 
+    
+  }
+  
+  @keyframes disappear {
+    0% {
+      transform: scaleY(1); 
+    }
+    100% {
+      transform: scaleY(0);  
+    }
+  }
+
+  #i {
+   
+    transform-origin: 50% 40%;
+    animation: appear 2s ease forwards; 
+    animation-delay: 1.5s;
+    transform: scaleY(0);
+  }
+
+  @keyframes appear{
+    0% {
+      transform: scaleY(0); 
+    }
+    100% {
+      transform: scaleY(1);  
+    }
+  }
+
+  #speaker {
+    
+    transform-origin: 60% 60%;
+   
+    animation: openClose 1s ease infinite alternate; 
+    animation-delay: 3.5s;
+  }
+
+  @keyframes openClose {
+    from {
+        transform: scale(0.980); 
+      }
+     to {
+        transform: scale(1.03); 
+      }
+  }
+  
+  #geluid{ 
+   
+    position: absolute;
+    background: linear-gradient(to right, #000 50%, transparent 50%);
+   
+    animation: verdwijn 2s ease forwards infinite;
+      animation-delay: 3.5s;
+      opacity: 0;
+  }
+
+
+  @keyframes verdwijn {
+    
+		0% {
+			opacity: 100%;
+			translate: 0px 0px ;
+		}
+		
+		100% {
+			translate: 20px 0px ;
+			opacity: 0% ;
+		}
+	  }
+
+  

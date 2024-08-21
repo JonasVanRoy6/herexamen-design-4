@@ -1,0 +1,468 @@
+body {
+	font-family: arial, sans-serif;
+	}
+.center {
+	width:650px;
+	height:400px;
+	position:absolute;
+    z-index: 0;
+	left:50%;
+	top:50%;
+	margin:-200px 0 0 -325px;
+	
+	
+}
+
+.naast-elkaar{
+	display: flex;
+}
+a:hover {
+	text-decoration:underline;
+	}
+nav {
+	float: right;
+	width: 280px;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-size: .8em;
+}
+nav a {
+	color: #222;
+	display: block;
+	float:left;
+	margin: 0px 8px;
+	}
+.apps {
+	text-indent: -9999px;
+	height: 16px;
+	width: 16px;
+	background: url(../images/apps.png);
+	margin-top:5px;
+	}
+.signin {
+	font-weight: bold;
+	color: #FFF;
+	background: #4485f4;
+	padding: 8px 10px;
+	border-style: none;
+	border-radius: 2px;
+	}
+.l {
+	line-height: 25px;	
+	}
+.signin:hover {
+	text-decoration:none;
+	}
+.search {
+	width:80%;
+	height:40px;
+    padding-left: 15px;
+	border-top: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	background: url(../images/micro.png) no-repeat 95% center;
+	margin-top: 60px;
+	margin-bottom: 15px;
+    font-size: .9em;
+    border-radius: 25px;
+	}
+.button {
+	font-size: .85em;
+	color: #131313;
+	background: #f2f2f2;
+	height: 30px;
+	padding: 6px 12px;
+	margin: 0px 6px;
+    border:none;
+	}
+p {
+	font-size: .8em;
+	color: #222;
+	margin-top: 35px;
+}
+a {
+	text-decoration: none;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+.doodle {
+	margin-top: 40px;
+	margin-left: 10px;
+	width: 80px;
+	stroke-dasharray: 290;
+	stroke-dashoffset: 0;
+	animation: swing 5s ease-in-out ;
+	
+	
+	}
+.rood-mannetje{
+	margin-top: 40px;
+	margin-left: 10px;
+	width: 80px;
+	stroke-dasharray: 290;
+	stroke-dashoffset: 0;
+	animation: rood-o 5s ease-in-out; 
+	
+}
+.blauw-mannetje{
+	margin-left: 10px;
+	width: 90px;
+	stroke-dasharray: 485;
+	stroke-dashoffset: 0;
+	animation: blauw-groot 3s ease-in-out;
+	
+}
+.blauw-mannetje-wiebel{
+	animation: wiebelen-G  2s   infinite  linear ;
+	animation-delay : 4s;
+}
+.blauwe-kleine{
+	transform-origin: top;
+	margin-top: 45px;
+	margin-left: 10px;
+	width: 80px;
+	stroke-dasharray: 810;
+	stroke-dashoffset: 0;
+	animation: blauwe-kleine 3s ease-in-out; 
+	
+}
+
+.blauwe-kleine-wiebelen{
+	transform-origin: top;
+	animation: wiebelen  3s infinite  linear ;
+	animation-delay : 4s;
+}
+.groen-mannetje{
+	margin-top: -25px;
+	margin-left: 10px;
+	width: 55px;
+	
+	stroke-dasharray: 680;
+	stroke-dashoffset: 0;
+	animation: groen 3s ease-in-out; 
+	
+}
+
+
+.rood-mannetje-zit{
+	margin-top: 10px;
+	
+	width: 80px;
+	
+	stroke-dasharray: 690;
+	stroke-dashoffset: 0;
+	animation: rood 3s ease-in-out; 
+	
+}
+
+.rood-mannetje-zit-bounce{
+	transform-origin: bottom;
+	animation: balanceer 3s ease-in-out infinite; 
+	animation-delay: 4s;
+}
+	
+	#linkerarm_geel{
+		transform-origin: right ;
+		animation: zwaai 1.5s ease-in-out infinite; 
+	animation-delay: 4s;
+		
+	}
+
+	#rechterarm_geel{
+		transform-origin: left ;
+		animation: zwaai 1.5s ease-in-out infinite; 
+	animation-delay: 4s;
+	}
+
+	#hoofd_geel{
+		transform-origin: bottom ;
+		animation: hoofd 1.5s linear infinite; 
+	animation-delay: 4s;
+	}
+
+	#hoofd{
+		transform-origin: bottom ;
+		animation: hoofd 1.5s linear infinite; 
+		animation-delay: 4s;
+	}
+
+	#rechterarm_rood{
+		transform-origin: left ;
+		animation: zwaai3 1.5s ease-in-out infinite; 
+	animation-delay: 4s;
+	}
+
+	#linkerarm_rood{
+		transform-origin: right ;
+		animation: zwaai4 1.5s ease-in-out infinite; 
+	animation-delay: 4s;
+	}
+
+	@keyframes rood-o {
+		0% {
+			stroke-dashoffset: 290;
+			
+		}
+		
+		100% {
+			stroke-dashoffset: 0;
+			
+		}
+	  }
+
+	@keyframes rood {
+		0% {
+			stroke-dashoffset: 680;
+			
+		}
+		
+		100% {
+			stroke-dashoffset: 0;
+			
+		}
+	  }
+	@keyframes groen {
+		0% {
+			stroke-dashoffset: 680;
+			
+		}
+		
+		100% {
+			stroke-dashoffset: 0;
+			
+		}
+	  }
+
+	  @keyframes wiebelen-G {
+
+		0% {
+			transform: rotate(0);
+			animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		  }
+		  50% {
+			transform: rotate(180deg);
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		  }
+		  100% {
+			transform: rotate(360deg);
+		  }
+	
+		  }
+	  @keyframes wiebelen {
+
+	0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+
+	  }
+
+
+	@keyframes blauw-groot {
+		
+		0% {
+			stroke-dashoffset: 485;
+			
+		}
+		
+		100% {
+			stroke-dashoffset: 0;
+			
+		}
+	  }
+	  @keyframes blauwe-kleine  {
+		0% {
+			stroke-dashoffset: 810;
+			
+		}
+		
+		100% {
+			stroke-dashoffset: 0;
+			
+		}
+	  }
+	@keyframes swing {
+		0% {
+			stroke-dashoffset: 290;
+			
+		}
+		
+		100% {
+			stroke-dashoffset: 0;
+			
+		}
+	  }
+	  @keyframes color {
+		0% {
+			fill: white;
+			
+		}
+		
+		100% {
+			
+			fill: #ffed00;
+		}
+	  }
+	 
+	  @keyframes color2 {
+		0% {
+			fill: white;
+			
+		}
+		
+		100% {
+			
+			fill:  #e30613;
+		}
+	  }
+
+	  @keyframes color3 {
+		0% {
+			fill: white;
+			
+		}
+		
+		100% {
+			
+		 fill: #009fe3;
+		}
+	  }
+	 
+	  @keyframes color4 {
+		0% {
+			fill: white;
+			
+		}
+		
+		100% {
+			
+		 fill: #009fe3;
+		}
+	  }
+	  @keyframes color5 {
+		0% {
+			fill: white;
+			
+		}
+		
+		100% {
+			
+		 fill:   #3aaa35;
+		}
+	  }
+	
+	  @keyframes color6 {
+		0% {
+			fill: white;
+			
+		}
+		
+		100% {
+			
+		 fill:   #e30613 ;
+		}
+	  }
+	 
+
+	  @keyframes spreken {
+		0% {
+			opacity: 100%;
+			translate: 0px 0px ;
+		}
+		
+		100% {
+			translate: 20px 20px ;
+			opacity: 0% ;
+		}
+	  }
+
+	  @keyframes balanceer {
+		0% {
+			transform: rotate(0deg);
+		  }
+		  25% {
+			transform: rotate(-10deg);
+		  }
+		  50% {
+			transform: rotate(0deg);
+		  }
+		  75% {
+			transform: rotate(10deg);
+		  }
+		  100% {
+			transform: rotate(0deg);
+		  }
+		}
+	  
+		@keyframes zwaai {
+			0% { 
+				transform: rotate(0deg) translate(0px);
+			}
+			50% { 
+				transform: rotate(-3deg) translate(0px);
+			}
+			100% { 
+				transform: rotate(0deg) translate(0px);
+			}
+			
+			}
+
+			@keyframes zwaai2 {
+				0% { 
+					transform: rotate(0deg) translate(0px);
+				}
+				50% { 
+					transform: rotate(3deg) translate(0px);
+				}
+				100% { 
+					transform: rotate(0deg) translate(0px);
+				}
+				
+				}
+
+				@keyframes hoofd  {
+					0% {
+						transform: rotate(0deg);
+					  }
+					  25%{
+						transform: rotate(1deg);
+					  }
+					  50% {
+						transform: rotate(0deg);
+					  }
+
+					  75%{
+						transform: rotate(-1deg);
+					  }
+					  100% {
+						transform: rotate(0deg);
+					  }
+					
+					}
+
+				@keyframes zwaai3 {
+				0% { 
+					transform: rotate(0deg) translate(0px);
+				}
+				50% { 
+					transform: rotate(3deg) translate(0px);
+				}
+				100% { 
+					transform: rotate(0deg) translate(0px);
+				}
+				
+				}
+
+				@keyframes zwaai4 {
+					0% { 
+						transform: rotate(0deg) translate(0px);
+					}
+					50% { 
+						transform: rotate(3deg) translate(0px);
+					}
+					100% { 
+						transform: rotate(0deg) translate(0px);
+					}
+					
+					}

@@ -1,0 +1,27 @@
+body {
+    background-image: url(image/Tekengebied\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.angel {
+    width: 843px;
+    height: 596px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    scale: 1;
+    transform: translate(-50%, -50%);
+    background: url(./image/Angel_official.png) no-repeat;
+    background-position: 0 0;
+    animation: animateAngle 2s steps(22)1 forwards;
+    animation-delay: 1s;
+}
+
+@keyframes animateAngle {
+    from { background-position: 0 0; }
+    to { background-position: -18542px 0; } 
+}
+
+
